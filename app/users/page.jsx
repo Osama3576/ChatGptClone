@@ -6,7 +6,7 @@ import Main from './components/Main';
 
 async function page() {
   const { email, name, image } = await getCurrentUser();
-  if (!email || !name || !image) return;
+  if (!email || !name || !image) return null;
 
   const currentUser = {
     email,
