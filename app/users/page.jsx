@@ -5,14 +5,14 @@ import getCurrentUser from '../actions/getCurrentUser';
 import Main from './components/Main';
 
 async function page() {
-  const { email, name, image } = await getCurrentUser();
+  const currentUser = await getCurrentUser();
   if (!email || !name || !image) return null;
 
-  const currentUser = {
-    email,
-    name,
-    image,
-  };
+  // const currentUser = {
+  //   email,
+  //   name,
+  //   image,
+  // };
 
   return <Main currentUser={currentUser} />;
 }
