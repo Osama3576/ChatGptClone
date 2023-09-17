@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (min-width: 900px) {
+  .grid-Con {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+textarea {
+  resize: none;
+}
+/* .sidebar-trans {
+  transform: translateX(-100%);
+  z-index: 50;
+  position: absolute;
+} */
