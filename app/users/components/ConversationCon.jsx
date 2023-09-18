@@ -39,7 +39,7 @@ function ConversationCon({ currentUser }) {
 
   return (
     <div className="h-full py-6 overflow-y-scroll text-left md:py-12 ">
-      {data?.conversationIds[0].dataforCon.map((cv, i) => {
+      {data?.conversationIds[0]?.dataforCon?.map((cv, i) => {
         return (
           <>
             <UserText
