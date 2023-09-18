@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 let text =
-  'I managed to create link tag of favicon with Metadata API.';
+  'Hey, Umar How can I Assist you today.Please SignUp To GetStarted.';
 function LeftSide() {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
