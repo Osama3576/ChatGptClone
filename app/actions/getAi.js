@@ -2,7 +2,7 @@ import OpenAI from 'openai';
 
 async function putContentUser(content) {
   const openai = new OpenAI({
-    apiKey: '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',
+    apiKey: process.env.OPENAI_API_KEY,
     dangerouslyAllowBrowser: true,
   });
   const { choices } = await openai.chat.completions.create({
