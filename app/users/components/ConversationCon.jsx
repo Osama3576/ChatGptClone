@@ -37,7 +37,7 @@ function ConversationCon({ currentUser }) {
       </div>
     );
 
-  if (data[0] === undefined) return <p>No Data</p>;
+  // if (data[0] === undefined) return <p>No Data</p>;
 
   return (
     <div className="h-full py-6 overflow-y-scroll text-left md:py-12 ">
