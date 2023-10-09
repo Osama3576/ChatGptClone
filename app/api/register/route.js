@@ -16,14 +16,13 @@ export async function POST(request) {
     const hashedPassword = await bcrypt.hash(password, 12);
     const user = await User.create({
       email,
-
       hashedPassword,
     });
-    await ConversationModel.create({
+    const conversation = await ConversationModel.create({
       email: email,
       name: 'new chat',
     });
-    return NextResponse.json(user);
+    return NextResponse.json(user, conversation);
   } catch (error) {
     console.log(error, 'Registration error');
     return new NextResponse('Internal error', { status: 500 });
